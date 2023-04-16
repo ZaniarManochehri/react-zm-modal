@@ -1,11 +1,6 @@
 import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
-
-import commonjs from '@rollup/plugin-commonjs';
-import scss from 'rollup-plugin-scss';
-import postcss from 'postcss';
-import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
+import sass from 'rollup-plugin-sass';
 
 export default {
     input: 'src/index.ts',
@@ -52,9 +47,8 @@ export default {
             tsconfig: 'tsconfig.json',
             useTsconfigDeclarationDir: true
         }),
-        commonjs(),
-        scss({
-            output: 'dist/index.css',
+        sass({
+            insert: true,
         }),
     ],
     declaration: true,
