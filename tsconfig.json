@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "declarationDir": "dist",
+    "moduleResolution": "node",
+    "lib": ["es6", "dom"],
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*", "dist/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
