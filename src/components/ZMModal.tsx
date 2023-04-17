@@ -25,15 +25,17 @@ export const ZMModal: React.FC<ModalProps> = (props) => {
         fullScreen = false,
     } = props;
 
-    useEffect(() => {
-        // if (show) {
-        //     // @ts-ignore
-        //     document?.body?.style.overflow = "hidden";
-        // } else {
-        //     // @ts-ignore
-        //     document?.body?.style.overflow = "auto";
-        // }
-    }, []);
+    if (typeof window !== 'undefined') {
+        useEffect(() => {
+            if (show) {
+                // @ts-ignore
+                document?.body?.style.overflow = "hidden";
+            } else {
+                // @ts-ignore
+                document?.body?.style.overflow = "auto";
+            }
+        }, [show]);
+    }
 
     return (
         <div
