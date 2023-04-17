@@ -5,9 +5,9 @@ export type Props = {
 }
 
 export const ZMButton: FC<Props> = ({label}) => {
-    // if (typeof window !== 'undefined') {
-    //     useEffect(() => {}, [])
-    // }
+    if (typeof window !== 'undefined') {
+        useEffect(() => {}, [])
+    }
 
     return <button>{label}</button>
 }

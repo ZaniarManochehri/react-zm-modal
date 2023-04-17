@@ -43,9 +43,9 @@ const ZMModal = (props) => {
 };
 
 const ZMButton = ({ label }) => {
-    // if (typeof window !== 'undefined') {
-    //     useEffect(() => {}, [])
-    // }
+    if (typeof window !== 'undefined') {
+        useEffect(() => { }, []);
+    }
     return React.createElement("button", null, label);
 };
 
