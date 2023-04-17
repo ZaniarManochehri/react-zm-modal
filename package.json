@@ -18,7 +18,10 @@
     "react": "^16.0.0 || ^17.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@types/node-sass": "^4.11.3",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
