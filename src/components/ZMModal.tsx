@@ -27,9 +27,11 @@ export const ZMModal: React.FC<ModalProps> = (props) => {
 
     useEffect(() => {
         if (show) {
-            document.body.style.overflow = "hidden";
+            // @ts-ignore
+            document?.body?.style.overflow = "hidden";
         } else {
-            document.body.style.overflow = "auto";
+            // @ts-ignore
+            document?.body?.style.overflow = "auto";
         }
     }, [show]);
 
