@@ -19,7 +19,7 @@ ___$insertStyle(".modal {\n  position: fixed;\n  margin: 0 auto;\n  top: 0;\n  r
 
 const ZMModal = (props) => {
     const { show, onClose, canceledOnTouchOutside = true, canceledOnTouchInside = false, children, contentStyle = {}, isBottomSheet = false, fullScreen = false, } = props;
-    // useEffect(() => {}, [])
+    React.useEffect(() => { }, []);
     // React?.useEffect(() => {
     //     if (show) {
     //         // @ts-ignore
