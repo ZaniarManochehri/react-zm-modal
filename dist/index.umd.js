@@ -47,9 +47,9 @@
   };
 
   const ZMButton = ({ label }) => {
-      if (typeof window !== 'undefined') {
-          React.useEffect(() => { }, []);
-      }
+      // if (typeof window !== 'undefined') {
+      //     useEffect(() => {}, [])
+      // }
       return React.createElement("button", null, label);
   };
 
