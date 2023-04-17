@@ -19,17 +19,7 @@
 
   const ZMModal = (props) => {
       const { show, onClose, canceledOnTouchOutside = true, canceledOnTouchInside = false, children, contentStyle = {}, isBottomSheet = false, fullScreen = false, } = props;
-      React === null || React === void 0 ? void 0 : React.useEffect(() => {
-          var _a, _b;
-          if (show) {
-              // @ts-ignore
-              (_a = document === null || document === void 0 ? void 0 : document.body) === null || _a === void 0 ? void 0 : _a.style.overflow = "hidden";
-          }
-          else {
-              // @ts-ignore
-              (_b = document === null || document === void 0 ? void 0 : document.body) === null || _b === void 0 ? void 0 : _b.style.overflow = "auto";
-          }
-      }, [show]);
+      React.useEffect(() => { }, []);
       return (React.createElement("div", { className: `modal ${show ? 'show' : ""}`, onClick: canceledOnTouchOutside ? onClose : () => null, style: isBottomSheet ? { alignItems: "flex-end" } : {} },
           React.createElement("div", { className: `content ${fullScreen ? 'fullScreen' : ""}`, onClick: canceledOnTouchInside ? () => null : (e) => e.stopPropagation(), style: {
                   ...contentStyle,
