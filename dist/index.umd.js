@@ -19,7 +19,7 @@
 
   const ZMModal = (props) => {
       const { show, onClose, canceledOnTouchOutside = true, canceledOnTouchInside = false, children, contentStyle = {}, isBottomSheet = false, fullScreen = false, } = props;
-      React.useEffect(() => {
+      React === null || React === void 0 ? void 0 : React.useEffect(() => {
           var _a, _b;
           if (show) {
               // @ts-ignore

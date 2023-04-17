@@ -25,7 +25,7 @@ export const ZMModal: React.FC<ModalProps> = (props) => {
         fullScreen = false,
     } = props;
 
-    useEffect(() => {
+    React?.useEffect(() => {
         if (show) {
             // @ts-ignore
             document?.body?.style.overflow = "hidden";
