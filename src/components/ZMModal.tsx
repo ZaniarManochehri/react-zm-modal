@@ -25,7 +25,7 @@ export const ZMModal: React.FC<ModalProps> = (props) => {
         fullScreen = false,
     } = props;
 
-    useEffect(() => {}, [])
+    // useEffect(() => {}, [])
     // React?.useEffect(() => {
     //     if (show) {
     //         // @ts-ignore
