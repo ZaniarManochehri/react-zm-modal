@@ -26,14 +26,14 @@ export const ZMModal: React.FC<ModalProps> = (props) => {
     } = props;
 
     useEffect(() => {
-        if (show) {
-            // @ts-ignore
-            document?.body?.style.overflow = "hidden";
-        } else {
-            // @ts-ignore
-            document?.body?.style.overflow = "auto";
-        }
-    }, [show]);
+        // if (show) {
+        //     // @ts-ignore
+        //     document?.body?.style.overflow = "hidden";
+        // } else {
+        //     // @ts-ignore
+        //     document?.body?.style.overflow = "auto";
+        // }
+    }, []);
 
     return (
         <div
