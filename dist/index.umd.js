@@ -46,6 +46,14 @@
               React.createElement("div", { style: { height: "100%" }, onClick: (e) => e.stopPropagation() }, children))));
   };
 
+  const ZMButton = ({ label }) => {
+      if (typeof window !== 'undefined') {
+          React.useEffect(() => { }, []);
+      }
+      return React.createElement("button", null, label);
+  };
+
+  exports.ZMButton = ZMButton;
   exports.ZMModal = ZMModal;
 
 }));

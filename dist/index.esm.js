@@ -42,5 +42,12 @@ const ZMModal = (props) => {
             React.createElement("div", { style: { height: "100%" }, onClick: (e) => e.stopPropagation() }, children))));
 };
 
-export { ZMModal };
+const ZMButton = ({ label }) => {
+    if (typeof window !== 'undefined') {
+        useEffect(() => { }, []);
+    }
+    return React.createElement("button", null, label);
+};
+
+export { ZMButton, ZMModal };
 //# sourceMappingURL=index.esm.js.map
