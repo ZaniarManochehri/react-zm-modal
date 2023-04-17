@@ -8,6 +8,7 @@ module.exports = {
         library: 'my-react-rollup',
         libraryTarget: 'umd',
         umdNamedDefine: true,
+        libraryExport: 'default',
     },
     module: {
         rules: [
